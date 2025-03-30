@@ -3,20 +3,441 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PathFinder - Shape Your Future</title>
+  <title>Flowers & Saints - Creative Agency</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="slider">
-    <!-- Relpace your own images  -->
-    <img src="/bcb11f01328f14e405fe46fe855aadce.jpg" alt="first" style="--pos: 1">
-    <img src="/2.webp" alt="second" style="--pos: 2">
-    <img src="/3.webp" alt="third" style="--pos: 3">
-    <img src="/4.webp" alt="fourth" style="--pos: 4">
-    <img src="/5.webp" alt="fifth" style="--pos: 5">
-    <img src="/6.webp" alt="sixth" style="--pos: 6">
-  </div>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">
+        <a href="/">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/creative-SW6QDQbcVuwPgb6a2CYtYmRbsJa4k1.png" alt="Flowers & Saints Logo" class="logo-img">
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="theme-toggle">
+        <button id="theme-toggle-btn" class="theme-btn">
+          <svg id="moon-icon" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="sun-icon" class="icon hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title reveal-element">
+            <span class="text-gradient">Flowers & Saints</span>
+          </h1>
+          <p class="hero-description reveal-element">
+            Where minimal design meets floral artistry. We craft elegant experiences that inspire and elevate your space.
+          </p>
+          <div class="hero-buttons reveal-element">
+            <a href="#work" class="apple-button">Explore Our Work</a>
+            <a href="#about" class="text-link">
+              Learn more <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image reveal-element">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/creative-SW6QDQbcVuwPgb6a2CYtYmRbsJa4k1.png" alt="Flowers & Saints design concept" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- Wear Your Story Section -->
+    <section class="wear-your-story">
+      <div class="container">
+        <div class="text-center reveal-element">
+          <h2 class="section-title">Wear Your Story</h2>
+          <p class="section-description">
+            Every piece from Flowers & Saints is a canvas for your unique narrative. Our designs blend minimal
+            aesthetics with nature's beauty, allowing you to express your individuality.
+          </p>
+          <div class="mt-10 reveal-element">
+            <a href="#" class="apple-button">
+              Explore Collection
+              <svg class="icon-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="feature-carousel" id="feature-carousel">
+          <div class="feature-track">
+            <div class="feature-card">
+              <div class="feature-icon">✨</div>
+              <h3 class="feature-title">Minimal Design</h3>
+              <p class="feature-description">Clean aesthetics that put your content in the spotlight.</p>
+              <a href="#" class="feature-link">Learn more →</a>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">📱</div>
+              <h3 class="feature-title">Responsive</h3>
+              <p class="feature-description">Flawless experiences across all devices and screen sizes.</p>
+              <a href="#" class="feature-link">Learn more →</a>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">⚡</div>
+              <h3 class="feature-title">Fast Performance</h3>
+              <p class="feature-description">Lightning-quick load times for smooth user interactions.</p>
+              <a href="#" class="feature-link">Learn more →</a>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🌈</div>
+              <h3 class="feature-title">Accessibility</h3>
+              <p class="feature-description">Inclusive design practices for all users.</p>
+              <a href="#" class="feature-link">Learn more →</a>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🔍</div>
+              <h3 class="feature-title">SEO Optimized</h3>
+              <p class="feature-description">Built to help your site rank higher in search results.</p>
+              <a href="#" class="feature-link">Learn more →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="work">
+      <div class="container">
+        <div class="text-center reveal-element">
+          <h2 class="section-title">Our Work</h2>
+          <p class="section-description">A showcase of our minimalist designs and creative solutions.</p>
+        </div>
+
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Branding">Branding</button>
+          <button class="filter-btn" data-filter="Web Design">Web Design</button>
+          <button class="filter-btn" data-filter="Mobile App">Mobile App</button>
+          <button class="filter-btn" data-filter="Digital Marketing">Digital Marketing</button>
+          <button class="filter-btn" data-filter="UI/UX">UI/UX</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-item" data-category="Branding">
+            <div class="portfolio-image">
+              <img src="/placeholder.svg?height=600&width=800" alt="Minimalist Brand Identity">
+              <div class="portfolio-overlay">
+                <p>Clean and modern visual communication for a tech startup</p>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-category">Branding</div>
+              <h3 class="portfolio-title">Minimalist Brand Identity</h3>
+              <a href="#" class="portfolio-link">
+                View Project
+                <svg class="icon-right-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="Web Design">
+            <div class="portfolio-image">
+              <img src="/placeholder.svg?height=800&width=600" alt="Sleek Web Experience">
+              <div class="portfolio-overlay">
+                <p>Elegant online presence for a luxury fashion brand</p>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-category">Web Design</div>
+              <h3 class="portfolio-title">Sleek Web Experience</h3>
+              <a href="#" class="portfolio-link">
+                View Project
+                <svg class="icon-right-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="Mobile App">
+            <div class="portfolio-image">
+              <img src="/placeholder.svg?height=600&width=800" alt="Intuitive Mobile App">
+              <div class="portfolio-overlay">
+                <p>User-friendly app design for a health and wellness company</p>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-category">Mobile App</div>
+              <h3 class="portfolio-title">Intuitive Mobile App</h3>
+              <a href="#" class="portfolio-link">
+                View Project
+                <svg class="icon-right-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="Digital Marketing">
+            <div class="portfolio-image">
+              <img src="/placeholder.svg?height=800&width=600" alt="Elegant Digital Campaign">
+              <div class="portfolio-overlay">
+                <p>Sophisticated marketing strategy for a luxury automotive brand</p>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-category">Digital Marketing</div>
+              <h3 class="portfolio-title">Elegant Digital Campaign</h3>
+              <a href="#" class="portfolio-link">
+                View Project
+                <svg class="icon-right-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="UI/UX">
+            <div class="portfolio-image">
+              <img src="/placeholder.svg?height=600&width=800" alt="Refined UI/UX Design">
+              <div class="portfolio-overlay">
+                <p>Streamlined user interfaces for a financial services platform</p>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-category">UI/UX</div>
+              <h3 class="portfolio-title">Refined UI/UX Design</h3>
+              <a href="#" class="portfolio-link">
+                View Project
+                <svg class="icon-right-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="Product Design">
+            <div class="portfolio-image">
+              <img src="/placeholder.svg?height=800&width=600" alt="Minimalist Product Design">
+              <div class="portfolio-overlay">
+                <p>Sleek and functional design for a smart home device</p>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-category">Product Design</div>
+              <h3 class="portfolio-title">Minimalist Product Design</h3>
+              <a href="#" class="portfolio-link">
+                View Project
+                <svg class="icon-right-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline" id="about">
+      <div class="container">
+        <div class="text-center reveal-element">
+          <h2 class="section-title">Our Journey</h2>
+          <p class="section-description">The evolution of Flowers & Saints through the years</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+          
+          <div class="timeline-event">
+            <div class="timeline-date">2018</div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content reveal-element">
+              <h3 class="timeline-title">Flowers & Saints Founded</h3>
+              <p class="timeline-description">Our journey began with a passion for minimal design and floral artistry.</p>
+              <div class="timeline-details">
+                <p>Founded by Jane Doe and John Smith, Flowers & Saints started as a small studio in Sydney's Surry Hills, combining their love for minimalist design and botanical beauty.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-event">
+            <div class="timeline-date">2019</div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content reveal-element">
+              <h3 class="timeline-title">First Major Exhibition</h3>
+              <p class="timeline-description">Showcased our unique blend of digital art and floral arrangements at the Sydney Design Festival.</p>
+              <div class="timeline-details">
+                <p>Our exhibition 'Digital Bloom' attracted over 10,000 visitors and received critical acclaim for its innovative approach to merging technology with natural elements.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-event">
+            <div class="timeline-date">2020</div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content reveal-element">
+              <h3 class="timeline-title">Launch of Online Store</h3>
+              <p class="timeline-description">Expanded our reach by bringing our creations to the digital world.</p>
+              <div class="timeline-details">
+                <p>In response to global changes, we pivoted to e-commerce, offering our unique designs and virtual floral workshops to a worldwide audience.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-event">
+            <div class="timeline-date">2021</div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content reveal-element">
+              <h3 class="timeline-title">Collaboration with Top Brands</h3>
+              <p class="timeline-description">Partnered with leading lifestyle brands to create exclusive collections.</p>
+              <div class="timeline-details">
+                <p>Our collaborations included limited edition prints with Australian fashion label Zimmermann and a bespoke fragrance line with Aesop.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-event">
+            <div class="timeline-date">2022</div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content reveal-element">
+              <h3 class="timeline-title">International Recognition</h3>
+              <p class="timeline-description">Received the prestigious International Floral Design Award.</p>
+              <div class="timeline-details">
+                <p>Our 'Ethereal Echoes' installation, which combined holographic projections with live flowers, won the gold medal at the Chelsea Flower Show.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-event">
+            <div class="timeline-date">2023</div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content reveal-element">
+              <h3 class="timeline-title">Expansion to Physical Stores</h3>
+              <p class="timeline-description">Opened our first flagship store in the heart of Sydney.</p>
+              <div class="timeline-details">
+                <p>Our Bondi Beach location features an immersive retail experience, blending digital installations with a curated selection of floral arrangements and lifestyle products.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee Section -->
+    <section class="marquee">
+      <div class="marquee-overlay"></div>
+      <div class="marquee-content">
+        <div class="marquee-item">Flowers & Saints</div>
+        <div class="marquee-item">Flowers & Saints</div>
+        <div class="marquee-item">Flowers & Saints</div>
+        <div class="marquee-item">Flowers & Saints</div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="text-center reveal-element">
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-description">
+            We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.
+          </p>
+        </div>
+        <div class="contact-form-container reveal-element">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+              <div class="error-message" id="name-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              <div class="error-message" id="email-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" required>
+              <div class="error-message" id="phone-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget</label>
+              <input type="text" id="budget" name="budget" placeholder="$1,000 - $5,000" required>
+              <div class="error-message" id="budget-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+              <div class="error-message" id="message-error"></div>
+            </div>
+            <button type="submit" class="submit-btn" id="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-container reveal-element">
+          <h2 class="newsletter-title">Stay Inspired</h2>
+          <p class="newsletter-description">
+            Subscribe to our newsletter for the latest updates on minimal design and floral artistry.
+          </p>
+          <form id="newsletter-form" class="newsletter-form">
+            <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
+            <div class="error-message" id="newsletter-email-error"></div>
+            <button type="submit" class="newsletter-btn" id="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer-nav">
+        <a href="#" class="footer-link">About</a>
+        <a href="#" class="footer-link">Work</a>
+        <a href="#" class="footer-link">Services</a>
+        <a href="#" class="footer-link">Contact</a>
+        <a href="#" class="footer-link">Privacy</a>
+        <a href="#" class="footer-link">Terms</a>
+      </nav>
+      <p class="footer-copyright">
+        Designed & Developed with ❤️ by Dollar Gill. Copyright Flowers & Saints
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top">↑</button>
+
+  <!-- Custom Cursor -->
+  <div id="custom-cursor" class="custom-cursor"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
